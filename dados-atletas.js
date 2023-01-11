@@ -1,5 +1,5 @@
 class Atleta {
-    contructor (nome,idade,peso,altura,notas){
+    constructor (nome,idade,peso,altura,notas){
     this.nome=nome;
     this.idade=idade;
     this.peso=peso;
@@ -31,19 +31,18 @@ class Atleta {
     let notasTotais = this.notas;
     let notasOrganizadas = notasTotais.sort(function comparaNumeros(a,b){
     if (a===b){
-    return 0;
+    return 0;}
     if (a<b){
     return -1;
     }
     if (a>b);
     return 1;
     });
-    }
     let notasComputadas = notasOrganizadas.slice(1,4)
     let somaNotasComputadas = notasComputadas.reduce(function(total,atual){
     return total + atual
     },0)
-    }
     let media = (somaNotasComputadas / notasComputadas.length)
     return media;
     }
+}
