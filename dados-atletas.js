@@ -21,6 +21,7 @@ class Atleta {
         }else{
         return "Sem categoria"
         }
+    }
     
     calculaIMC(){
     return this.peso/(this.altura*this.altura)
