@@ -46,3 +46,10 @@ class Atleta {
     return media;
     }
 }
+console.log("Nome: " + atleta.obtemNomeAtleta());
+console.log("Idade: " + atleta.obtemIdadeAtleta());
+console.log("Peso: " + atleta.obtemPesoAtleta());
+console.log("Notas: " + atleta.obtemNotasAtleta());
+console.log("Categoria: " + atleta.obtemCategoria());
+console.log("IMC: " + atleta.obtemIMC());
+console.log("Média válida: " + atleta.obtemMediaValida());
